@@ -19,9 +19,10 @@ public class SpawnManager : MonoBehaviour
     //Start is called before the first frame
     void Start()
     {
-        InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval);
+        InvokeRepeating(spawnmethodName, startDelay, spawnInterval);
     }
-
+    //Change this strings to match the name of the method that follows
+    private const string spawnmethodName = "SpawnRandomAnimal";
     //Method to spawn animals
     private void SpawnRandomAnimal()
     {
