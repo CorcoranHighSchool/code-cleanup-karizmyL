@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Target : MonoBehaviour
@@ -43,11 +42,7 @@ public class Target : MonoBehaviour
     {
         return new Vector3(Random.Range(-xRange, xRange), ySpawn, 0.0f);
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     //player clicks
     private void OnMouseDown()
     {
